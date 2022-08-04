@@ -12,15 +12,15 @@ export default function Dashboard() {
       <Box>
         <Grid container className='row'>
           
-          <Grid item xs={1} backgroundColor='#2E2E2E' height='100vh'>
+          <Grid item backgroundColor='#2E2E2E' sx={{ maxHeight: '100vh'}} className='col-lg-1'>
             <NavBar />
           </Grid>
 
-          <Grid item xs={3} backgroundColor='#fff' height='100vh'>
+          <Grid item backgroundColor='#fff' height='100vh' className='col-lg-3'>
             <ChatsCenter />            
           </Grid>
 
-          <Grid item xs={8} height='100vh'>
+          <Grid item height='100vh' className='col-lg-8'>
             <MessageCenter />
           </Grid>
         </Grid>

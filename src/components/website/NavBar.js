@@ -14,34 +14,34 @@ import ProfileImage from '../../images/profile.png'
 export default function NavBar() {
   return (
     <>
-        <Box>
-            <IconButton className='d-block mx-auto mt-4'>
+        <Box sx={{ textAlign: 'center'}}>
+            <IconButton className='mt-4'>
                 <ArticleIcon sx={{ fontSize: 30, color:'#fff' }} />
             </IconButton>
             
-            <IconButton className='d-block mx-auto mt-4'>
+            <IconButton className='mt-4'>
                 <AccountCircleIcon sx={{ fontSize: 30, color:'#fff' }} />
             </IconButton>
             
-            <IconButton className='d-block mx-auto mt-4'>
+            <IconButton className='mt-4'>
                 <ChatIcon sx={{ fontSize: 30, color:'#fff' }} />
             </IconButton>
             
-            <IconButton className='d-block mx-auto mt-4'>
+            <IconButton className='mt-4'>
                 <RecentActorsIcon sx={{ fontSize: 30, color:'#fff' }} />
             </IconButton>
             
-            <IconButton className='d-block mx-auto mt-4'>
-                <WifiCalling3Icon sx={{ fontSize: 30, color:'#fff' }} />
-            </IconButton>
-            
-            <IconButton className='d-block mx-auto mt-4'>
+            <IconButton className='mt-4'>
                 <SettingsIcon sx={{ fontSize: 30, color:'#fff' }} />
             </IconButton>
             
-            <Stack className='d-block mx-auto mt-4' >
-                <Avatar alt='profile' src={ProfileImage} sx={{ width: '80px', height: '80px'}} />
-            </Stack>
+            <IconButton className='mt-4'>
+                <Avatar alt='profile' src={ProfileImage} sx={{ width: '50px', height: '50px'}} />
+            </IconButton>
+
+            {/* <Stack className='mx-auto mt-4' >
+                <Avatar alt='profile' src={ProfileImage} sx={{ width: '50px', height: '50px'}} />
+            </Stack> */}
         </Box>
             
     </>
